@@ -8,7 +8,16 @@
 
 h1, h2, h3, h4{
   font-family: 'Lato', sans-serif;
+  color: #17abb3;
 }
+ h1{
+  color: #fff;
+ }
+
+ h3{
+  color: #333;
+  margin-bottom: 0;
+ }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -16,6 +25,7 @@ body {
   margin: 0;
   background-color: #f5f5f5;
   color: #333;
+  font-weight: bold;
 }
 
 .container {  
@@ -33,7 +43,7 @@ header {
   padding-right: 10em;
 }
 
-img{  
+.profile-picture{  
   width: 8em;
   height: 8em;
   border-radius: 50%;
@@ -50,17 +60,30 @@ a{
   color:#fff;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #333;
+}
+
 .contact-info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  width: 75%;
+  margin: 1em auto;
 }
 
 .contact-item{
   display: flex;
   align-items: center;
   width: 50%;
-  margin: 0.5em 0;
+  margin: 0.4em 0;
+}
+
+.icon {
+  display: flex;
+  flex-flow: row center;
+  margin-right: 0.5em;
 }
 
 .header-item{
@@ -102,4 +125,49 @@ section{
 .text-profile{
   text-indent:1em;
   text-align: justify;
+}
+
+.formations-experiences-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.date{
+  color: #17abb3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-color: #17abb3;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.github-icon {
+  color: #fff;
+}
+
+.datetime {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.formations-items{
+  margin: 1em;
+}
+
+.mousehover:hover{
+  background:#e3e3e3;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-color: #17abb3;
+  padding: 0 0 0 0.5em;
 }
