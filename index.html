@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="http://googleusercontent.com/releases/v5.15.4/css
     /all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgI3v6A2f4pA2f4z6v+A2f4gA2z5o2A
     2f4eA2p7s5A2f4o" crossorigin="anonymous">
+    <a href="https://www.freepik.com" title="Freepik"></a><a href="https://www.flaticon.com/fr/" title="Flaticon"></a></div><div><a href="https://www.flaticon.com/fr/auteurs/google" title="Google"></a><a href="https://www.flaticon.com/fr/" title="Flaticon"></a></div><div><a href="https://www.flaticon.com/fr/auteurs/those-icons" title="Those Icons"></a><a href="https://www.flaticon.com/fr/" title="Flaticon"></a></div><div><a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect"></a><a href="https://www.flaticon.com/fr/" title="Flaticon"></a></div><div><a href="https://www.flaticon.com/fr/auteurs/nur-syifa-fauziah" title="Nur syifa fauziah"></a><a href="https://www.flaticon.com/fr/" title="Flaticon"></a></div>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="./assets/pictures/selfie.jpg" alt="selfie">
+            <img src="./assets/pictures/selfie.jpg" alt="selfie" class="profile-picture">
             <div class="header-info">
                 <h1 class="header-item">Justin Belle</h1>
                 <span class="header-item">Developpeur Web et Web Mobile</span>
@@ -86,22 +87,20 @@
                     <h2>Formations</h2>
                         <hr>
                         <ul>
-                            <li>
+                            <li class="formations-items mousehover">
                                 <div>
-                                    <div>
-                                        <h3>Développeur Web et Web Mobile. (en cours)</h3>
-                                        <p>Centre Européen de Formation</p>
+                                    <h3>Développeur Web et Web Mobile. (en cours)</h3>
+                                    <div class="formations-experiences-item">
+                                        <span class="formaton-name">Centre Européen de Formation</span>
+                                        <time datetime="2025-2026" class="date">2025-2026</time>
                                     </div>
-                                    <time datetime="2025-2026">2025/2026</time>
                                 </div>
                             </li>
-                            <li>
-                                <div>
-                                    <div>
-                                        <h3>CAP Maçonnerie</h3>
-                                        <p>CFA Batipole, Livron</p>
-                                    </div>
-                                    <time datetime="2011-2013">2011/2013</time>
+                            <li class="formations-items mousehover">
+                                <h3>CAP Maçonnerie</h3>
+                                <div class="formations-experiences-item">
+                                    <span class="formaton-name">CFA Batipole, Livron</span>
+                                    <time datetime="2011-2013" class="date">2011-2013</time>
                                 </div>
                             </li>
                         </ul>
@@ -109,18 +108,16 @@
                 <div class="experiences">
                     <h2>Expérience professionnelle</h2>
                     <hr>
-                    <div>
-                        <div>
-                            <h3>Gestion et administration communautaire</h3>
-                        </div>
-                        <time datetime="20013-2025">2013/2025</time>
+                    <div class="formations-experiences-item formations-items mousehover">
+                        <span class="formaton-name">Gestion et administration communautaire</span>
+                        <time datetime="20013-2025" class="date">2013-2025</time>
                     </div>
                 </div>
             </section> 
         </main>
         <footer>
-            <a href="https://github.com/justinbelle" target="_blank">github</a>
-            <time datetime="2025-08-11">Mis a jour le: 11/08/2025</time>
+            <a href="https://github.com/justinbelle" target="_blank"><img src="./assets/icons/png/001-github.png" alt="github-icon" class="github-icon"><i class="fi fi-brands-github"></i></a>
+            <time datetime="2025-08-11" class="datetime">Mis a jour le : 15/08/2025</time>
         </footer>
     </div>
 </body>
