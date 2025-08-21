@@ -1,9 +1,40 @@
-@import url('http://googleusercontent.com/css2?family=Lato:wght@400;700&display=swap');
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-VariableFont_wght\ \(convert.io\).woff'),
-  url('../fonts/Raleway-Italic-VariableFont_wght\ \(convert.io\).woff');
+    font-family: 'ralewaythin_italic';
+    src: url('raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1, h2, h3, h4{
@@ -17,6 +48,12 @@ h1, h2, h3, h4{
  h3{
   color: #333;
   margin-bottom: 0;
+  font-weight: bold;
+ }
+
+ h2{
+  margin-bottom: 0;
+  margin-top: 1.3em;
  }
 
 body {
@@ -25,11 +62,11 @@ body {
   margin: 0;
   background-color: #f5f5f5;
   color: #333;
-  font-weight: bold;
+  width: 1160px;
 }
 
 .container {  
-  width: 1160px;
+  width: 85%;
   margin: 0 auto;
   background-color: #e3e3e3;
 }
@@ -40,7 +77,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   color: #fff;  
-  padding-right: 10em;
+  padding-right: 6em;
 }
 
 .profile-picture{  
@@ -101,6 +138,7 @@ main{
 
 section{
   padding:2.5em;
+  padding-top: 0;
 }
 
 .aboutme{
@@ -152,7 +190,9 @@ footer {
 }
 
 .github-icon {
-  color: #fff;
+  background: #fff;
+  border-radius: 1em;
+  border: solid 2px;
 }
 
 .datetime {
@@ -170,4 +210,22 @@ footer {
   border-left-style: solid;
   border-color: #17abb3;
   padding: 0 0 0 0.5em;
+}
+
+.competences-list {
+  font-weight: bold;
+}
+
+.formation-name {
+  font-weight: bold;
+}
+
+.interests-list {
+  list-style: square;
+  list-style-position: inside;
+}
+
+.qualities-list {
+  list-style: square;
+  list-style-position: inside;
 }
