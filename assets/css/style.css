@@ -23,9 +23,18 @@
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-VariableFont_wght\ \(convert.io\).woff'),
-  url('../fonts/Raleway-Italic-VariableFont_wght\ \(convert.io\).woff');
+    font-family: 'ralewaythin_italic';
+    src: url('raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1, h2, h3, h4{
@@ -39,7 +48,7 @@ h1, h2, h3, h4{
  h3{
   color: #333;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: bold;
  }
 
  h2{
@@ -53,7 +62,6 @@ body {
   margin: 0;
   background-color: #f5f5f5;
   color: #333;
-  font-weight: bold;
   width: 1160px;
 }
 
@@ -202,4 +210,22 @@ footer {
   border-left-style: solid;
   border-color: #17abb3;
   padding: 0 0 0 0.5em;
+}
+
+.competences-list {
+  font-weight: bold;
+}
+
+.formation-name {
+  font-weight: bold;
+}
+
+.interests-list {
+  list-style: square;
+  list-style-position: inside;
+}
+
+.qualities-list {
+  list-style: square;
+  list-style-position: inside;
 }
